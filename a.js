@@ -1,1 +1,1 @@
-alert(1)
+let mrx=1999
