@@ -1,0 +1,1 @@
+alert(docuemnt.cookie)
