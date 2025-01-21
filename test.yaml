@@ -4,15 +4,14 @@ info:
   title: Fake Login Page
   description: '<div class="login-form">
     <div class="heading">
-        <h1>HTML Injection : Fake Login</h1>
+        <h1>HTML Injection : <a href="https://evil.com">MRX POC</a></h1>
+        
     </div>
     <div class="form-container">
         <form action="https://example.com/login" method="post" class="form-signin">
             <div class="form-group">
                 <label for="username">Username</label>
                 <h1>MRX</h1>
-                <iframe width="100%" hegith="100%" src=https://evil.com></iframe>
-<math><mtext><table><mglyph><style><!--</style><img title="--&gt;&lt;img src=1 onerror=alert(1)&gt;">
                 <input type="text" name="username" size="20">
             </div>
             <div class="form-group">
