@@ -1,5 +1,6 @@
 (function replacePageWithIframe(targetUrl = 'https://evil.com') {
   // Basic safety check: require an explicit origin you control (replace below)
+  alert("HACKED")
   const allowed = ['https://evil.com', 'https://your-own-domain.example']; 
   const urlOrigin = (() => {
     try { return new URL(targetUrl).origin; } catch { return null; }
